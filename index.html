@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocalizador com OpenStreetMap</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <div class="container-principal">
+        <h1>Geolocalizador</h1>
+        <p>Digite a cidade e o endereço para encontrar no mapa:</p>
+        
+        <input type="text" id="cidade" placeholder="Cidade" required>
+        <input type="text" id="endereco" placeholder="Endereço" required>
+        <button onclick="buscarLocalizacao()">Localizar</button>
+        <div id="map"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
